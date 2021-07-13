@@ -6,5 +6,5 @@ e.get("/",function(req,res)
 				res.send("Welcome to Node");
 			}
 	);
-
-e.listen(5000);
+var p=process.env.port || 5000;
+e.listen(p);
